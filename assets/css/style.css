@@ -29,7 +29,7 @@ aside {
     overflow: hidden;
 }
 
-.icon-menu img{
+.icon-menu img {
     width: 35px;
     height: 35px;
     margin-right: 15px;
@@ -39,7 +39,7 @@ aside {
 #barra-menu {
     background: #180127;
     height: 100vh;
-    width: 0px; 
+    width: 0px;
     transition: 0.3s all;
 }
 
@@ -61,22 +61,23 @@ aside {
     border-radius: 15px;
     background: #0b44ad;
 }
+
 .c-icon {
     margin-top: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
-    gap: 15px;
     overflow: hidden;
 }
 
-.c-icon span{
+.c-icon a {
     color: #fbf7f7;
     transform: 0.5s;
     transition: 0.2s;
 }
 
-.c-icon span:hover{
+.c-icon a:hover {
+    transform: scale(1.11);
     color: #0b44ad;
 
 }
@@ -129,44 +130,22 @@ aside {
     transition-duration: 0.9s;
 }
 
+.main-title button a {
+    color: inherit;
+}
+
+
 .main-title button:hover {
     border: solid 1px #fff;
     background: transparent;
 }
 
-.numeros {
-    display: flex;
-    margin-top: 35px;
-    color: #fff;
-    gap: 40px;
-    cursor: pointer;
-}
 
-.title {
-    transition: 0.5s;
-}
-
-.title h3 {
-    font-size: 35px;
-    margin-top: 15px;
-    font-family: 'Inter';
-    font-weight: bolder;
-}
-
-.title p {
-    font-family: 'Inter';
-    font-weight: normal;
-}
-
-.title:hover {
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
 
     .section-1-bg {
         background-size: contain;
-        
+
     }
 
     .main-title h1 {
@@ -184,11 +163,6 @@ aside {
         width: 150px;
     }
 
-    .numeros {
-
-        margin-top: 40%;
-    }
-    
 }
 
 /* ------ sobre mim ------- */
@@ -207,14 +181,14 @@ aside {
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
 }
 
-.sobre-mim h1{
+.sobre-mim h1 {
     text-align: center;
     font-size: 55px;
     font-family: 'Inter';
     font-weight: bold;
 }
 
-.sobre-mim h4{
+.sobre-mim h4 {
     text-align: center;
     margin-top: 30px;
     font-size: 25px;
@@ -222,16 +196,16 @@ aside {
     font-weight: bold;
 }
 
-.sobre-mim span{
+.sobre-mim span {
     color: #0b44ad;
 }
 
-.sobre-mim p{
+.sobre-mim p {
     margin-top: 25px;
     font-family: 'Inria Sans';
 }
 
-.sobre-mim button{
+.sobre-mim button {
     background: #0b44ad;
     margin-left: 30%;
     margin-top: 30px;
@@ -245,12 +219,209 @@ aside {
     transition: .9s;
 }
 
-.sobre-mim button:hover{
+.sobre-mim button a {
+    color: inherit;
+}
+
+.sobre-mim button:hover {
     background: transparent;
     color: #0b44ad;
 
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
+    .image img {
+        width: 350px;
+        height: auto;
+    }
 
+    .sobre-mim p {
+        font-size: 12px;
+        width: 500px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/* ------ habilidades ------- */
+
+.container {
+    width: 100%;
+    background-color: #f3eeee;
+    padding: 50px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Inria Sans';
+    font-weight: bold;
+    padding-top: 12%;
+}
+
+.container p {
+    text-align: center;
+    font-family: 'Inria Sans';
+    color: #685b5b;
+    margin-top: 25px;
+}
+
+.c-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fffbfb;
+    padding: 50px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
+    margin-top: 25px;
+}
+
+.card img {
+    width: 50px;
+    height: auto;
+}
+
+/* .c-card-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    text-align: center;
+    flex-wrap: wrap;
+} */
+
+.card h3{
+   font-size: 20px;
+   font-family: 'Inria Sans';
+   font-weight: 700;
+}
+
+.card h4{
+    margin-top: 15px;
+    font-family: 'Inria Sans';
+    font-weight: lighter;
+    color: #beb7b7;
+ }
+
+ .card:hover{
+    transform: scale(1.1);
+    transition-duration: .9s;
+    cursor: crosshair;
+ }
+
+ @media screen and (max-width: 414px) {
+    .card {
+        margin-top: 35px;
+    }
+
+    .c-card-2 {
+        margin-top: 35px;
+    }
+}
+
+/* ------ projetos------- */
+
+.c-projetos {
+    width: 100%;
+    background-color: #fff;
+    padding: 85px;
+}
+
+.c-projetos h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Inria Sans';
+    font-weight: bold;
+    padding: 10%;
+}
+
+.c-projetos p{
+    text-align: center;
+    color: #685b5b;
+    font-family: 'Inria Sans';
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.img-projetos{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+.img-projetos img{
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px;
+    transition: 0.5s;
+}
+
+.img-projetos img:hover {
+    border: solid 2px #180127;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: grab;
+}
+
+@media screen and (max-width: 414px) {
+    .img-projetos img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* ------ rodape ------- */
+
+.c-rodape{
+    width: 100%;
+    background-color: #383535;
+    padding: 50px;
+}
+
+.c-rodape h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Inria Sans';
+    font-weight: lighter;
+}
+
+.c-rodape form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 50px 14px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+}
+
+.c-rodape form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #0b44ad;
+    color: #fff;
+    box-shadow: 0px 0px 5px #fff, 0px 0px 15px #858585;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    margin-top: 28px;
+    right: 100px;
+}
+
+@media screen and (max-width: 414px) {
+    .c-rodape form input:last-child{
+        width: 100px;
+    }
 }

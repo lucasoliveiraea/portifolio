@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Portifólio | Front</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -18,21 +19,21 @@
             <div id="barra-menu">
                 <ul>
                     <li><a href="#">início</a></li>
-                    <li><a href="#">projetos</a></li>
-                    <li><a href="#">contato</a></li>
-                    <li><a href="#">sobre mim</a></li>
+                    <li><a href="#sm">sobre mim</a></li>
+                    <li><a href="#hb">habilidades</a></li>
+                    <li><a href="#pj">projetos</a></li>
+                    <li><a href="#ct">contato</a></li>
                 </ul>
 
                 <div class="c-icon">
-                    <span class="icon">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </span>
-                    <span class="icon">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </span>
-                    <span class="icon">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </span>
+                    <a class="icon" href="https://linkedin.com/in/lucasoliveiraea/" target="_blank"
+                        rel="noopener noreferrer">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a class="icon" href="https://github.com/lucasoliveiraea" target="_blank" rel="noopener noreferrer">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+
                 </div>
             </div>
         </aside>
@@ -41,49 +42,131 @@
             <h1>Oi, eu sou Lucas Oliveira</h1>
             <h2>Desenvolvedor Front-end</h2>
             <h5>Estudante Full Stack - StackX</h5>
-            <button class="btn">Saber mais</button>
+            <button class="btn"><a href="#sm">Saber mais</a></button>
 
-            <div class="numeros">
-                <div class="title">
-                    <h3>xx</h3>
-                    <p>Lorem iiortatibusnem qui.</p>
-                </div>
-                <div class="title">
-                    <h3>xx</h3>
-                    <p>Lorem iiortatibusnem qui.</p>
-                </div>
-                <div class="title">
-                    <h3>xx</h3>
-                    <p>Lorem iiortatibusnem qui.</p>
-                </div>
-            </div>
         </div>
-    </div>
+    </div><!-- section-1-bg -->
 
-    <section class="c-sobre">
+    <section class="c-sobre" id="sm" data-aos="fade-up">
         <div class="image">
             <img src="/assets/img/imgperfil.jpg" alt="perfil">
         </div>
         <div class="sobre-mim">
             <h1>Sobre mim</h1>
             <h4>Desenvolvedor & <span>engenheiro</span></h4>
-            <p>Lorem ipsum dolor sit amet consecte turzdthaet rh aejh aTrthasrth 
+            <p>Lorem ipsum dolor sit amet consecte turzdthaet rh aejh aTrthasrth
                 <br>elit. Eligendi porro molestiae quos mollitia turzdthaet rh aejh
                 <br>hic minus sed impedit dolores, dicta, id turzdthaet rh aejh
                 <br>nostrum totam placeat ipsum eaque error turzdthaet rh aejh
                 <br>numquam. Fuga, error voluptasLorem ipsum turzdthaet rh aejh
                 <br>dolor sit amet consectetur adipisicing elit. turzdthaet rh aejh
-                <br>Eligendi porro molestiae quos mollitia hic 
+                <br>Eligendi porro molestiae quos mollitia hic
                 <br>minus sed impedit dolores, dicta, id nostrum turzdthaet rh aejh
-                <br>totam placeat ipsum eaque error numquam. Fuga, error voluptas.</p></p>
-            <button class="btn">Saber mais</button>
+                <br>totam placeat ipsum eaque error numquam. Fuga, error voluptas.
+            </p>
+            </p>
+            <button class="btn"><a href="https://linkedin.com/in/lucasoliveiraea/" target="_blank"
+                    rel="noopener noreferrer">Saber mais</a></button>
         </div>
-    </section>
+    </section><!-- c-sobre -->
+
+    <section class="container" id="hb" data-aos="fade-up">
+        <h1>Habilidades</h1>
+        <p>Algumas das minhas habilidades no desenvolvimento front-end</p>
+
+        <div class="c-card" data-aos="fade-up">
+            <div class="card">
+                <img src="/assets/img/html.png" alt="html">
+                <h3>HTML 5</h3>
+                <h4>É uma linguagem de marcação
+                    <br> utilizada na construção de
+                    <br> páginas na Web
+                </h4>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/css.png" alt="css">
+                <h3>CSS 3</h3>
+                <h4>É um mecanismo para adicionar
+                    <br> estilo a um documento
+                    <br> Web
+                </h4>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/js.png" alt="js">
+                <h3>JAVA SCRIPT</h3>
+                <h4>É uma linguagem de programação
+                    <br> Juntamente com HTML e CSS,
+                    <br> é uma das três principais
+                    <br> tecnologias da Web
+                </h4>
+            </div>
+        </div>
+
+        <!-- Novas Habilidades -->
+        <!--         <div class="c-card-2" data-aos="fade-up">
+            <div class="card">
+                <img src="/assets/img/menu-aberto.png" alt="phone">
+                <h3>Desenvolvedor Mobile</h3>
+                <h4>Lorem ipsum é simplesmente
+                    <br> uma simulação de texto da
+                    <br> industria tipografica e de
+                    <br> impressos
+                </h4>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/menu-aberto.png" alt="phone">
+                <h3>Desenvolvedor Web</h3>
+                <h4>Lorem ipsum é simplesmente
+                    <br> uma simulação de texto da
+                    <br> industria tipografica e de
+                    <br> impressos
+                </h4>
+            </div>
+
+            <div class="card">
+                <img src="/assets/img/menu-aberto.png" alt="phone">
+                <h3>Crescimento de marca</h3>
+                <h4>Lorem ipsum é simplesmente
+                    <br> uma simulação de texto da
+                    <br> industria tipografica e de
+                    <br> impressos
+                </h4>
+            </div>
+        </div> -->
 
 
+    </section><!-- container -->
+
+    <section class="c-projetos" id="pj" data-aos="fade-up">
+        <h1>Meus projetos</h1>
+        <p>Alguns dos meus projetos</p>
+        <p>Me envie uma mensagem</p>
+
+        <div class="img-projetos" data-aos="fade-up">
+            <img src="/assets/img/em breve.png" alt="projeto">
+            <img src="/assets/img/em breve.png" alt="projeto">
+            <div class="img-3"><img src="/assets/img/em breve.png" alt="projeto"></div>
+        </div>
+    </section><!-- c-projetos -->
+
+    <section class="c-rodape" id="ct">
+        <h1>Insira seu e-mail para receber novidades !</h1>
+        <form>
+            <input type="email" name="email" id="email" placeholder="seu_email@email.com">
+            <input type="submit" name="submit" value="Enviar">
+        </form>
+    </section><!-- c-rodape -->
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+
+    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
