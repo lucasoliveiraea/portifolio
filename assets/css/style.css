@@ -201,8 +201,9 @@ aside {
 }
 
 .sobre-mim p {
-    margin-top: 25px;
+    margin-top: 30px;
     font-family: 'Inria Sans';
+    text-align: center;
 }
 
 .sobre-mim button {
